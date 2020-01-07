@@ -1,0 +1,39 @@
+/* pages/postJob/postJob.wxss */
+.navigation{
+  width: 542rpx;
+  margin-left: 104rpx;
+  margin-bottom: 30rpx;
+}
+.details .details_main {
+  min-height: 100vh;
+}
+.navigation_box {
+  width: 260rpx;
+  height: 58rpx;
+  position: absolute;
+  line-height: 58rpx;
+  border-radius: 29rpx;
+}
+.footer{
+  background: #FFFFFF;
+box-shadow: 0 -1px 8px 0 rgba(247,107,36,0.19);
+height: 110rpx;
+text-align: center;
+line-height: 110rpx;
+font-size: 36rpx;
+color: #F76B24;
+position: fixed;
+bottom: 0;
+width: 750rpx;
+}
+.body{
+  padding-bottom:110rpx; 
+}
+.stop{
+  width: 110rpx;
+  height: 100rpx;
+  position: absolute;
+  z-index: 1000000;
+  top: 120rpx;
+  right: 50rpx;
+}

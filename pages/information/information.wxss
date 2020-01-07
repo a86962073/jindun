@@ -1,0 +1,13 @@
+@import'../resume/resume.wxss';
+.main .addbtn image{
+  width: 204rpx;
+  height: 204rpx;
+  position: relative;
+  top: -24rpx;
+  left: -24rpx;
+  border-radius: 50%;
+}
+.main{
+  height:620rpx;
+  margin-top:320rpx
+}

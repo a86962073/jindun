@@ -1,0 +1,45 @@
+/* pages/Application/Application.wxss */
+
+.navigation_box {
+  width: 240rpx;
+  height: 58rpx;
+  position: absolute;
+  line-height: 58rpx;
+  border-radius: 29rpx;
+}
+.jobRecruitment_box .scroll-x {
+  border-bottom:9rpx solid #FF8F4D;
+}
+.jobRecruitment_box{
+  margin-bottom: 40rpx;
+}
+.details .details_menu{
+  font-size: 26rpx;
+  color: #141414;
+  text-align: center;
+  
+}
+.details .details_bar{
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 33.33%;
+  display: inline-block;
+  position: relative
+}
+.details .details_bar:not(:first-child)::after{
+    content:"";
+    background-color:#F76B24;
+    width: 20rpx;
+    height: 20rpx;
+    display: inline-block;
+    border-radius: 10rpx;
+    position: absolute;
+    bottom: -10rpx;
+    left: -10rpx;
+}
+.details .details_bar>text{
+  font-size: 18rpx;
+  display: inline-block;
+  position: relative;
+  top:-5rpx;
+}

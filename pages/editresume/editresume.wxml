@@ -1,0 +1,70 @@
+<view class='body background_main'>
+<view class='header_box'>
+  <image src='{{image?image:indexdata.profile_photo_url}}' bindtap='uploader'></image>
+  <view>点击可更换头像</view>
+</view>
+<view class='formbox'>
+  <view class='form'>
+          <text class='formname'>姓名</text>
+          <input placeholder="请输入您的姓名"  bindchange='bindChange' value='{{indexdata.full_name}}'></input>
+    </view>
+  </view>
+  <view class='formbox'>
+
+     <view class='form'>
+         <picker bindchange='bindChange4' range="{{array3}}" value="{{index3}}" range-key='{{"name"}}'>
+          <text class='formname' >现况</text>
+          <input placeholder="请选择>" disabled value='{{array3[index3].name}}'></input>
+          </picker>
+    </view>
+     
+  </view>
+  <view class='formbox'>
+  <view class='form'>
+    <picker mode="date" value='{{time2}}' bindchange='bindTimeChange2'>
+          <text class='formname' >出生年月</text>
+          <input placeholder="请选择>" disabled value='{{time2}}'></input>
+          </picker>
+    </view>
+    
+  </view>
+  <view class='formbox'>
+  <view class='form'>
+         <picker bindchange='bindChange2' range="{{array5}}" value="{{index5}}" range-key='{{"name"}}'>
+          <text class='formname' >最高学历</text>
+          <input placeholder="请选择>" disabled value='{{array5[index5].name}}'></input>
+          </picker>
+    </view>
+  </view>
+  <view class='formbox'>
+  <view class='form'>
+          <picker bindchange='bindChange3' range="{{array2}}" value="{{index2}}" range-key='{{"name"}}'>
+          <text class='formname' >工作年限</text>
+          <input placeholder="请选择>" disabled value='{{array2[index2].name}}'></input>
+          </picker>
+    </view>
+    
+  </view>
+  <view class='formbox'>
+  <view class='form'>
+          <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}" style='display:none'>
+          <text class='formname' >所在城市</text>
+          <input placeholder="请选择>" disabled value='{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}'></input>
+          </picker>
+          <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+          <text class='formname' >所在城市</text>
+          <input placeholder="请选择>" disabled value='{{region[0]}}，{{region[1]}}，{{region[2]}}'></input>
+          </picker>
+    </view>
+    
+  </view>
+  <view class='formbox'>
+      <view class='form'>
+         <picker bindchange='bindChange1' range="{{array4}}" value="{{index4}}" range-key='{{"name"}}'>
+          <text class='formname' >性别</text>
+          <input placeholder="请选择>" disabled value='{{array4[index4].name}}'></input>
+          </picker>
+          </view>
+        </view>
+  <view class='btn btn_save btn_yellow' bindtap='save'>保存修改</view>
+</view>

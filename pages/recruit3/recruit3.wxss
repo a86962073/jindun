@@ -1,0 +1,18 @@
+@import'../resume/resume.wxss';
+.main .addbtn image{
+  width: 204rpx;
+  height: 204rpx;
+  position: relative;
+  top: -24rpx;
+  left: -24rpx;
+  border-radius: 50%;
+}
+.main{
+  margin-top:320rpx;
+  padding-bottom: 200rpx;
+}
+.formbox textarea{
+  padding:0 30rpx;
+  box-sizing: border-box;
+  height: 180rpx;
+}

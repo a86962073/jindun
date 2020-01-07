@@ -1,0 +1,76 @@
+<view class='body background_main'>
+  <view class='title'>
+    <image src='../images/bg2.png' class='bg_img'></image>
+    <view class='title_main'>
+      <view class='title_main_header'>
+          <image src='{{indexdata.logo_url}}'></image>
+          <view class='companyInfo'>
+            <view class='view1'>{{indexdata.publisher}}</view>
+            <view  class='view2'>{{indexdata.city_name}}{{indexdata.area_name}} </view>
+          </view>
+          <view class='tosee' bindtap='look'>
+            查看
+          </view>
+      </view>
+      <view class='title_main_footer'>
+         <view class='view1'>
+            <text class='text1'>{{indexdata.category_name}}</text>
+            <text class='text2'>{{indexdata.salary_str}}</text>
+         </view>
+         <view  class='view2'>
+            <text class='text1'>{{indexdata.sex}}</text>
+            <text class='text2'>{{indexdata.age}}</text>
+            <text class='text3'>{{indexdata.education}}</text>
+            <text class='text4'>{{indexdata.number}}人</text>
+         </view>
+         <view  class='view3'>
+            <text class='text1' wx:for='{{indexdata.tag_list}}' wx:key='item'>{{item.name}}</text>
+         </view>
+          <view  class='view4'>
+            <text class='text1'>{{indexdata.browse_num}}</text>
+            <view class='text2'>
+            <image src='../images/lbwz.png'></image>
+            {{indexdata.publish_time}}</view>
+         </view>
+      </view>
+    </view>
+  </view>
+  <view class='position_box'>
+  <scroll-view scroll-x="true" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-left="10" style='width:750;white-space: nowrap;'>
+  <view class="scroll-x">
+    <view class='title'>岗位要求</view>
+    <scroll-view scroll-y="true">
+    <view class='main'>
+{{indexdata.content}}
+    </view>
+       </scroll-view>
+  </view>
+  <view class="scroll-x">
+      <view class='title'>工作地址</view>
+      <scroll-view scroll-y="true">
+       <view class='main'>
+       <image src='../images/didian.png' style='width:25rpx;height:25rpx;vertical-align: center;'></image>
+        <text>    {{indexdata.work_address}}</text>
+       <map id="myMap" longitude="{{indexdata.longitude}}" latitude="{{indexdata.latitude}}" markers='{{markers}}' enable-scroll='{{false}}' >
+       <cover-view></cover-view>
+       </map>
+    </view>
+      </scroll-view>
+  </view>
+  
+  <view class="scroll-x">
+      <view class='title'>岗位测评</view>
+       <view class='main'>
+       <image src='../images/gwbs.png' class='gwbs'></image>
+       <view class='btn'>我要测试</view>
+    </view>
+  </view>
+  </scroll-view>
+</view>
+</view>
+<cover-view class='footer'>
+     <cover-view><cover-image src='../images/sc{{icon}}.png'  bindtap='switch1' class='footerimages'></cover-image></cover-view>
+    <cover-view><button style='display:inline-block' open-type="share"><cover-image  class='footerimages2' src='../images/share.png' ></cover-image></button></cover-view>
+    <cover-view  class='btn btn_chen2' bindtap='phone'>电话咨询</cover-view>
+    <cover-view  class='btn btn_yellow2' bindtap='deliver'>投递简历</cover-view>
+</cover-view>

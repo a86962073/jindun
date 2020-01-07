@@ -1,0 +1,96 @@
+<view class='body background_main'>
+  <view style='font-size: 30rpx;color: #FFFFFF;padding-left:30rpx;'>岗位信息</view>
+  <view class='formbox'>
+  <view class='form'>
+       <text class='formname' >岗位名称</text>
+        <input placeholder="请填写岗位名称"></input>
+    </view>
+   <view class='form'>
+       <picker value='{{array}}' bindchange='bindChange' range="{{array}}">
+          <text class='formname' >所属部门</text>
+          <input placeholder="请选择>" disabled></input>
+        </picker>
+    </view>
+    <view class='form'>
+       <picker value='{{array2}}' bindchange='bindChange2' range="{{array2}}">
+          <text class='formname' >所属岗位</text>
+          <input placeholder="请选择>" disabled></input>
+        </picker>
+    </view>
+    <view class='form'>
+       <text class='formname' >岗位所需人数</text>
+        <input placeholder="请填写岗位所需人数" type='number'></input>
+    </view>
+</view>
+<view class='formbox'>
+<view class='form'>
+       <picker value='{{array3}}' bindchange='bindChange3' range="{{array3}}">
+          <text class='formname' >工作经验</text>
+          <input placeholder="请选择>" disabled></input>
+        </picker>
+    </view>
+</view>
+<view class='formbox'>
+<view class='form'>
+       <picker value='{{array4}}' bindchange='bindChange4' range="{{array4}}">
+          <text class='formname' >性别</text>
+          <input placeholder="请选择>" disabled></input>
+        </picker>
+    </view>
+    <view class='form'>
+       <picker value='{{array5}}' bindchange='bindChange5' range="{{array5}}">
+          <text class='formname' >年龄</text>
+          <input placeholder="请选择>" disabled></input>
+        </picker>
+    </view>
+    <view class='form'>
+       <picker value='{{array6}}' bindchange='bindChange6' range="{{array6}}">
+          <text class='formname' >所属区域</text>
+          <input placeholder="请选择>" disabled></input>
+        </picker>
+    </view>
+    <view class='form'>
+       <picker value='{{array7}}' bindchange='bindChange7' range="{{array7}}">
+          <text class='formname' >所在地点</text>
+          <input placeholder="请选择>" disabled></input>
+        </picker>
+    </view>
+    <view class='form'>
+     <text class='formname' >详细地址</text>
+          <view><textarea placeholder="小区/写字楼 等详细地址"></textarea></view>
+      
+    </view>
+</view>
+<view class='formbox'>
+<view class='form'>
+       <picker value='{{array3}}' bindchange='bindChange3' range="{{array3}}">
+          <text class='formname' >薪资</text>
+          <input placeholder="请选择>" disabled></input>
+        </picker>
+    </view>
+
+<view class='form'>
+       <picker value='{{array3}}' bindchange='bindChange3' range="{{array3}}">
+          <text class='formname' >是否面论</text>
+          <input placeholder="请选择>" disabled></input>
+        </picker>
+    </view>
+
+<view class='form'>
+       <picker value='{{array3}}' bindchange='bindChange3' range="{{array3}}">
+          <text class='formname' >薪资发放方式</text>
+          <input placeholder="请选择>" disabled></input>
+        </picker>
+    </view>
+ </view>
+ <view class='formbox'>
+<view class='form'>
+       <picker value='{{array3}}' bindchange='bindChange3' range="{{array3}}" >
+          <text class='formname' style='width:300rpx;'>岗位描述和技能要求</text>
+          <input placeholder=">" style='width:200rpx;'disabled></input>
+        </picker>
+    </view>
+</view>
+<view class='btn btn_yellow btn_submit'>发布岗位</view>
+</view>
+

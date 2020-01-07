@@ -1,0 +1,54 @@
+<!--index.wxml-->
+<view class='body'>
+<swiper indicator-dots="true"
+  autoplay="true" interval="5000" duration="500" style="width:100%;height:53.3vw">
+  <block>
+    <swiper-item data-url='{{idx}}' catchtap="proablum" wx:for='{{slide}}' wx:key="item" >
+      <image src="{{item.image_url}}" class="slide-image" bindtap='webview' data-id='{{item.android_link}}' style="width:100%;height:53.3vw"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='tab'>
+    <view class='tab_box' bindtap='Application'>
+        <image src='../images/wyyp.png'></image>
+        <view>我要应聘</view>
+    </view>
+    <view class='tab_box' bindtap='recruit'>
+        <image src='../images/wyzp.png'></image>
+        <view>我要招聘</view>
+    </view>
+    <view class='tab_box' bindtap='guangguang'>
+        <image src='../images/gg.png'></image>
+        <view>逛逛</view>
+    </view> 
+</view>
+<view class='jobRecruitment_box'>
+  <view class='job_title'>
+    <image src='../images/gwlb.png'></image>
+    行政单位招聘专区
+    <text class='more' bindtap='more'>更多<text class='more_right'>></text></text>
+  </view>
+  <scroll-view scroll-x="true" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-left="10" style='width:100%;white-space: nowrap;' >
+  <view class="scroll-x" wx:for='{{indexData}}' wx:key='item' bindtap='info' data-id='{{item.id}}'>
+    <image src='{{item.logo_url}}'></image>
+    <view class='job_name'>{{item.title}}</view>
+    <view class='job_price'>{{item.salary_str}}</view>
+    <view class='btns btn_yellow btn_check'>前往查看</view>
+  </view>
+  </scroll-view>
+</view>
+<view class='jobRecruitment_box'>
+  <view class='job_title'>
+    <image src='../images/home.png'></image>
+    热点新闻
+    <text class='more' bindtap='more2'>更多<text class='more_right'>></text></text>
+  </view>
+  <view class="scroll-y" wx:for='{{home_list}}' wx:key='item' bindtap='info2' data-id='{{item.id}}'>
+    <view class='home_box'>
+    <view class='job_name'>{{item.title}}</view>
+    <view class='job_price'>{{item.release_time}}</view>
+    </view>
+    <image src='{{item.main_image_url}}'></image>
+  </view>
+</view>
+</view>

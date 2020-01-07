@@ -1,0 +1,9 @@
+<view class='jobRecruitment_box'>
+  <view class="scroll-y" wx:for='{{home_list}}' wx:key='item' bindtap='info2' data-id='{{item.id}}'>
+    <view class='home_box'>
+    <view class='job_name'>{{item.title}}</view>
+    <view class='job_price'>{{item.release_time}}</view>
+    </view>
+    <image src='{{item.main_image_url}}'></image>
+  </view>
+</view>

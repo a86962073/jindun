@@ -1,0 +1,17 @@
+<view class='body background_main'>
+  <view class='header'>
+    <image src='{{indexdata.main_image_url}}' class='traniPic'></image>
+    <view class='title'>{{indexdata.title}} <image src='../images/enrollsuccess.png' class='success'></image></view>
+    <view class='price'>¥{{indexdata.price}}</view>
+    <view class='time'>{{indexdata.start_time}}至{{indexdata.end_time}}</view>
+    <view class='header_main'>
+    <import src="../../wxParse/wxParse.wxml" />
+    <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    </view>
+  </view>
+  <view class='main'>
+    <view class='title'>报名须知</view>
+    <view class='info'>    <import src="../../wxParse/wxParse.wxml" /> <template is="wxParse" data="{{wxParseData:article2.nodes}}" /></view>
+  </view>
+   
+</view>

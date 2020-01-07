@@ -1,0 +1,20 @@
+<view class='body'>
+  <view style='  overflow: hidden'>
+  <view class='header'>
+  <view class='title'>我要招聘</view>
+  <image src='../images/border_bottom.png' class='border_bottom'></image>
+  <view class='info'>当前账号已注册公司请选择账号名下企业进入</view>
+  </view>
+    <view class='company_box' wx:for='{{indexdata}}' wx:key='item' data-id='{{item.company_id}}' bindtap='company'>
+      <image src='../images/company.png' ></image>
+      <view class='view'>
+        <view class='text1'>{{item.company_name}}</view>
+        <view class='text2' style='opacity: 0'>法人：陈总</view>
+        <text class='text3'>></text>
+      </view>
+    </view>
+    <view class='btn btn_yellow new_btn' bindtap='new_btn'>新企业</view>
+  </view>
+</view>
+<image src='../images/background.png' class='background' mode='widthFix'></image>
+

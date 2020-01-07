@@ -1,0 +1,35 @@
+/* pages/wantrecruit/wantrecruit.wxss */
+.background{
+  width: 750rpx;
+  height: 100%;
+  position: absolute;
+  z-index:0
+}
+.box{
+  z-index: 1000;
+  position: relative;
+  text-align: center;
+  width:540rpx;
+  height:360rpx;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: #ffffff;
+  font-size: 70rpx;
+  color: #323232;
+}
+.box1{
+ border-right:8px solid #F76B24;
+  border-left:8px solid #F76B24;
+  top: 100rpx;
+}
+.box2{
+ border-right:8px solid #F9DC55;
+ border-left:8px solid #F9DC55;
+ top: 185rpx;
+}
+.box>image{
+  width: 186rpx;
+  height: 140rpx;
+  margin:30rpx auto;
+}
+

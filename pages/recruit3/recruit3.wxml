@@ -1,0 +1,44 @@
+<view class='body'>
+  <view style='  overflow: hidden'>
+  <view class='header'>
+  <view class='title' style='color:#262B42;'>我要招聘</view>
+  <image src='../images/border_bottom.png' class='border_bottom'></image>
+  <view class='info'> <text>该账号还未注册公司
+请先注册公司信息或获取授权进入</text></view>
+  </view>
+  <view class='main'>
+      <view class='sanjiao'>
+      </view>
+      <view class='addbtn_box'>
+      <view class='addbtn'>
+        <image src='../images/touxiang1.png'></image>
+      </view>
+      </view>  
+      <view class='form'>
+        <view class='formbox'>
+          <text class='formname' >公司法人</text>
+          <input placeholder="请填写公司法人姓名" bindchange='bindChange1'></input>
+        </view><view class='formbox'>
+         <text class='formname' >信用代码</text>
+          <input placeholder="请填写统一社会信用代码" bindchange='bindChange2'></input>
+        </view>
+        <view class='formbox'>
+           <text class='formname' >企业联系电话</text>
+          <input placeholder="请填写企业联系电话" type='number' bindchange='bindChange3'></input>
+        </view>
+        <view class='formbox'>
+           <text class='formname' >经办人</text>
+          <input placeholder="请填写经办人" bindchange='bindChange4'></input>
+        </view>
+        <view class='formbox'>
+          <text class='formname' >开启电子签</text>
+           <switch class="tui-fr" checked="{{isChecked1}}" bindchange="changeSwitch1"/>
+        </view>
+      </view>
+        
+     <view class='next_btn btn btn_chen' bindtap='register'>注册</view>
+  </view>
+  </view>
+</view>
+<image src='../images/background.png' class='background' mode='widthFix'></image>
+

@@ -1,0 +1,45 @@
+/* pages/release/release.wxss */
+@import "../invite/invite.wxss";
+.body{
+  min-height: 100vh;
+  overflow: hidden;
+  padding-top: 20rpx;
+  box-sizing: border-box;
+}
+.formbox{
+  background: #ffffff;
+  width: 690rpx;
+  margin: 20rpx auto; 
+  border-radius: 3px;
+}
+.form{
+  padding: 0
+}
+.form input {
+top:0rpx;
+}
+textarea{
+  height: 280rpx;
+  width: 580rpx;
+  margin-left: 20rpx;
+}
+.btn_submit{
+  margin: 50rpx auto;
+  width: 600rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center
+
+}
+.wx-switch-input{
+    background: #F76B24 !important;
+    border: #F76B24 !important; /* 2018-07-18 重置开关边框颜色 */
+}
+.tui-fr{
+ position: absolute;
+ right: 50rpx;
+}
+.textarea{
+  line-height: 50rpx;
+  height: 500rpx;
+}

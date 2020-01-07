@@ -1,0 +1,112 @@
+/* pages/Train/Train.wxss */
+.details .details_menu{
+  font-size: 26rpx;
+  color: #141414;
+  text-align: center;
+  width: 750rpx;
+}
+.details .details_bar{
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 33.33%;
+  display: inline-block;
+  position: relative
+}
+
+.details .details_bar>text{
+  font-size: 18rpx;
+  display: inline-block;
+  position: relative;
+  top:-5rpx;
+}
+.trainBox{
+  background: #ffffff;
+  width: 700rpx;
+  border-radius: 6rpx;
+  display: flex;
+  padding: 30rpx;
+  box-sizing: border-box;
+  margin-bottom: 30rpx;
+}
+.trainBox image{
+  width: 200rpx;
+  height: 136rpx;
+ 
+}
+.details_main{
+  padding: 25rpx;
+  min-height: 83vh
+}
+.trainMain{
+  display: inline-block;
+  padding-left: 20rpx;
+}
+.trainTitle{
+  font-size: 30rpx;
+color: #141414;
+font-weight: 800;
+height: 100rpx;
+max-width: 450rpx;
+}
+.trainPrice{
+  font-size: 30rpx;
+  color: #F24724;
+  height: 60rpx;
+}
+.trainTime{
+  font-size: 24rpx;
+color: #B4B4B4;
+}
+.list1{
+  width: 345rpx;
+  line-height: 80rpx;
+  float: left;
+  margin-left: 30rpx;
+}
+.list2{
+  width: 345rpx;
+  line-height: 80rpx;
+  float: right;
+  margin-left: 30rpx;
+}
+.list{
+  overflow: hidden;
+  text-align: left;
+
+}
+.footer{
+  line-height: 90rpx;
+}
+.footer text{
+  width: 375rpx;
+  display: inline-block;
+  font-size: 30rpx;
+color: #141414;
+}
+.footer text:not(:first-child){
+  background: #F76B24;
+  color: #ffffff
+}
+.details_menu ,.search{
+  position: fixed;
+  z-index: 1000;
+  background: #ffffff;
+}
+.details_menu{
+  top:80rpx;
+}
+.search{
+  width: 750rpx;
+  height: 80rpx
+}
+.details_main{
+  position: relative;
+  top: 160rpx;
+  z-index: 10
+}
+.listbox.active{
+   display: none
+}
+.list .active{
+  color: #FFB400;
+}

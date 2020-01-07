@@ -1,0 +1,10 @@
+<view class='body background_main'>
+  <view class='main'>
+    <image src='../images/paysuccess.png'></image>
+    <view class='view1'>报名成功</view>
+    <view  class='view2'>报名须知:</view>
+    <view  class='view3'>报名成功后请携带本人身份证原件及正反面复印件一份，若已有汽车驾照，请提供原件及一份复应件；</view>
+ 
+  </view>
+  <view class='btn btn_yellow' bindtap='toindex'>返回首页</view>
+</view>

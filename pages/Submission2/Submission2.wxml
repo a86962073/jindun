@@ -1,0 +1,38 @@
+<view class='body background_main'>
+     <view class='header'>
+    <image src='{{indexdata.main_image_url}}' class='traniPic'></image>
+    <view class='title'>{{indexdata.title}}</view>
+    <view class='price'>¥{{indexdata.price}}</view>
+    <view class='time'>{{indexdata.start_time}}至{{indexdata.end_time}}</view>
+  </view>
+    <view class='body_title'>核对您的报名信息</view>
+    <view class='info'>
+      <view>
+        <text class='text1'>姓名</text>
+        <text class='text2'>{{indexdata2.name}}</text>
+      </view>
+        <view>
+        <text class='text1'>身份证号</text>
+        <text class='text2'>{{indexdata2.credential_number}}</text>
+      </view>
+        <view>
+        <text class='text1'>手机号</text>
+        <text class='text2'>{{indexdata2.phone}}</text>
+      </view>
+      <view wx:if='{{indexdata2.agent_name}}'>
+        <text class='text1'>代办人</text>
+        <text class='text2'>{{indexdata2.agent_name}}</text>
+      </view>
+      <view wx:if='{{indexdata2.agent_phone}}'>
+        <text class='text1'>代办人电话</text>
+        <text class='text2'>{{indexdata2.agent_phone}}</text>
+      </view>
+      <view class='info_footer'>
+        <text>报名费用</text>
+        <text class='price'>¥{{indexdata.price}}</text>
+      </view>
+    </view>
+    <view class='btn btn_yellow btn_submit' bindtap='btn_submit'>
+    支付
+    </view>
+</view>

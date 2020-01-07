@@ -1,0 +1,136 @@
+
+.background{
+  width: 750rpx;
+  height: 100%;
+  position: absolute;
+  z-index:0;
+  top:0;
+}
+.body{
+  position: relative;
+  z-index: 10;
+  padding: 40rpx;
+    font-family: 'PingFang'!important;
+
+}
+.title{
+  font-size: 50rpx;
+  color: #F76B24;
+  font-weight: 800
+}
+.border_bottom{
+  width: 60rpx;
+  height: 4rpx;
+  position: relative;
+  top: -10rpx;
+}
+.header .info{
+  font-size: 26rpx;
+  color: #F76B24;
+}
+.main{
+  background: #ffffff;
+  margin-top: 250rpx;
+  height:720rpx;
+  position: relative;
+  border-bottom:10rpx solid#F76B24;
+  text-align: center;
+  z-index: 50
+}
+.addbtn{
+  color: #F76B24;
+  font-size: 100rpx;
+  font-weight: lighter;
+  border:1px solid rgba(247,107,36,0.30);
+  width:160rpx;
+  height: 160rpx;
+  line-height: 140rpx;
+  text-align: center;
+  border-radius:50% ;
+  box-sizing: border-box;
+}
+.addbtn_box{
+  border: 1px solid rgba(247,107,36,0.30);
+  display: inline-block;
+  border-radius:50% ;
+  padding: 20rpx;
+  position: absolute;
+  box-sizing: border-box;
+  top: -200rpx;
+  left:231rpx;
+  background: #ffffff
+}
+.sex>image{
+  display: inline-block;
+  width: 190rpx;
+  height:360rpx;
+}
+.sex{
+    display: inline-block;
+    padding: 80rpx 50rpx 20rpx 50rpx;
+  
+}
+radio-group radio:nth-child(odd){
+  padding-right: 110rpx;
+}
+radio-group radio:nth-child(even){
+  padding-left: 130rpx;
+}
+radio .wx-radio-input{
+   border-radius: 50%;/* 圆角 */
+   width: 40rpx;
+   height: 40rpx;
+}
+
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked{
+   border: none;
+   background: red;
+}
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked::before{
+   border-radius: 50%;/* 圆角 */
+   width: 45rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+   height: 45rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+   line-height: 40rpx;
+   text-align: center;
+   font-size:30rpx; /* 对勾大小 30rpx */
+   color:#fff; /* 对勾颜色 白色 */
+   background: #f9dc55;
+      border:none;
+   transform:translate(-50%, -50%) scale(1);
+   -webkit-transform:translate(-50%, -50%) scale(1);
+}
+.next_btn{
+  width: 400rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius:40rpx;
+  position: absolute;
+  bottom: 60rpx; 
+  right: 135rpx;
+}
+.sanjiao{
+  position: absolute;
+  border-top:670rpx solid #ffffff; 
+border-right:670rpx solid transparent; 
+border-bottom:670rpx solid transparent; 
+border-left:670rpx solid transparent;
+transform:rotate(345deg);
+top:-160rpx;
+  z-index: -10
+}
+.addbtn_box{
+  box-sizing: border-box;
+  height: 204rpx;
+  width: 204rpx
+}
+.touxiang{
+  width: 204rpx;
+  height: 204rpx;
+  position: absolute;
+  top: -2rpx;
+  right: -2rpx;
+  z-index: 200;
+  border-radius: 50%
+}

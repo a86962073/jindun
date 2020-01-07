@@ -1,0 +1,32 @@
+<view class='body'>
+  <view style='  overflow: hidden'>
+  <view class='header'>
+  <view class='title' style='color:#262B42;'>工作经历</view>
+  <image src='../images/border_bottom.png' class='border_bottom'></image>
+  <view class='info'> <text>展示出你的工作经历</text></view>
+  </view>
+  <view class='main'>
+      <view class='sanjiao'>
+      </view>
+      <view class='addbtn_box'>
+      <view class='addbtn'>
+           <image src='https://jd.100dp.com{{image}}' wx:if='{{image}}'></image>
+        <image src='../images/touxiang1.png' wx:if='{{!image}}'></image>
+      </view>
+      </view>
+      <view class='experience_box'>
+        <view class='experience' wx:for='{{indexData}}' wx:key='item'>
+          <view class='view1'>{{item.company}} <text class='text1' bindtap='edit' data-id='{{item.id}}'>编辑</text></view>
+          <view class='view2'>{{item.start_time_format}}至{{item.end_time_format}}</view>
+          <view class='view3'>工作内容</view>
+          <view class='view3'>{{item.description}}</view>
+        </view>
+      </view>
+     <view class='add_btn btn ' bindtap='add_btn'>添加工作经历</view>        
+     <view class='next_btn btn btn_chen' bindtap='register'>完成</view>
+  </view>
+  </view>
+</view>
+<image src='../images/background.png' class='background' mode='widthFix'></image>
+
+

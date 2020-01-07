@@ -1,0 +1,5 @@
+@import'../information/information.wxss';
+.main{
+  height:700rpx;
+  margin-top:240rpx
+}

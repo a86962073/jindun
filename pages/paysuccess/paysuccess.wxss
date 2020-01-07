@@ -1,0 +1,50 @@
+/* pages/paysuccess/paysuccess.wxss */
+.body{
+  min-height: 100vh;
+  padding-top: 25rpx;
+  box-sizing: border-box
+}
+.main{
+  width: 700rpx;
+  margin-left: 25rpx;
+  border-radius:6rpx;
+  background: #ffffff; 
+  text-align: center;
+  padding: 20rpx 30rpx;
+  box-sizing: border-box
+}
+.main image{
+  width: 128rpx;
+  height: 128rpx;
+  margin-top: 55rpx;
+}
+.main .view1{
+  font-size: 36rpx;
+color: #141414;
+font-weight: 800;
+margin-top: 20rpx;
+}
+.main .view2{
+  font-size: 30rpx;
+color: #323232;
+font-weight: 800;
+margin-top: 80rpx;
+text-align: left
+}
+.main .view3{
+  font-size: 24rpx;
+color: #323232;
+font-weight: 800;
+margin-top: 10rpx;
+text-align: left;
+padding-bottom: 40rpx;
+}
+.btn_yellow{
+  width: 600rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 45rpx;
+  margin-left: 75rpx;
+  margin-top: 80rpx;
+}

@@ -1,0 +1,73 @@
+/* pages/Mynews/Mynews.wxss */
+.body{
+  min-height: 100vh;
+}
+.header{
+  width: 690rpx;
+  height: 80rpx;
+  margin-left: 30rpx;
+  background: #ffffff;
+  position: relative;
+    margin-bottom: 30rpx;
+}
+.header::after{
+  content:" ";
+  width: 26rpx;
+  height: 26rpx;
+  border-radius: 50%;
+  background: #F76B24;
+  position: absolute;
+  bottom: -13rpx;
+  right: 332rpx;
+}
+.header .header_box{
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 26rpx;
+  color: #141414;
+  height: 60rpx;
+}
+.header .header_box.active{
+  color:#F76B24;
+}
+.newsbox{
+  width: 690rpx;
+  height: 200rpx;
+  box-sizing: border-box;
+  padding: 50rpx 30rpx; 
+  background: #ffffff;
+  border-radius: 6rpx;
+  margin-left: 30rpx;
+  margin-bottom: 20rpx;
+}
+.newsbox image{
+  width: 100rpx;
+  height: 100rpx;
+  vertical-align: top;
+}
+.view1,.view2{
+  display: inline-block;
+  width: 500rpx;
+}
+.view1 .text1{
+  font-size: 30rpx;
+  color: #141414;
+  margin-left: 30rpx;
+}
+.newsbox .view1{
+  position: relative;
+  top: -20rpx;
+}
+.view1 .text2{
+  font-size: 20rpx;
+color: #B4B4B4;
+float: right;
+}
+.view2{
+  font-size: 26rpx;
+color: #B4B4B4;
+margin-left: 30rpx;
+margin-top: 20rpx;
+}

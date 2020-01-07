@@ -1,0 +1,24 @@
+<view class='body background_main'>
+  <view class='header'>
+    <image src='{{indexdata.main_image_url}}' class='traniPic'></image>
+    <view class='title'>{{indexdata.title}}</view>
+    <view class='price'>¥{{indexdata.price}}</view>
+    <view class='time'>{{indexdata.start_time}}至{{indexdata.end_time}}</view>
+    <view class='header_main'>
+    <import src="../../wxParse/wxParse.wxml" />
+    <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    </view>
+  </view>
+  <view class='main'>
+    <view class='title'>报名须知</view>
+    <view class='info'>    <import src="../../wxParse/wxParse.wxml" /> <template is="wxParse" data="{{wxParseData:article2.nodes}}" /></view>
+<view class='agree'>
+    <radio value='{{agree}}' bindtap='agree'  checked="{{agree}}"></radio>    
+    <text bindtap='agree'>本人已阅读并知晓报名须知的内容，并同意</text>
+    </view>
+  </view>
+   
+  <view class='footer'>
+  <view>报名费用：</view><view class='price'>¥{{indexdata.price}}</view><view class='btns btn_yellow' bindtap='submit'>我要报名</view>
+  </view>
+</view>

@@ -1,0 +1,21 @@
+<!--pages/Mynews/Mynews.wxml-->
+<view class='background_main body'>
+  <view class='header'>
+    <view class='header_box {{active=="system"?"active":""}}' bindtap='tabchage' data-tab='system'>系统消息</view>
+    <view class='header_box {{active=="company"?"active":""}}'  bindtap='tabchage' data-tab='company'>企业消息</view>
+  </view>
+  <view class='news'>
+      <view class='newsbox' wx:for='{{indexdata}}' wx:key='item'>
+          <view>
+            <image src='../images/company.png'></image>
+          <view class='view1'>
+            <text class='text1'>{{item.title}}</text>
+             <text class='text2'>{{item.send_time}}</text>
+              <view class='view2'>
+              {{item.content}}
+            </view>
+            </view>
+          </view>
+      </view>
+  </view>
+</view>

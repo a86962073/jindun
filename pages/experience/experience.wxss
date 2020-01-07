@@ -1,0 +1,75 @@
+@import'../information/information.wxss';
+.main{
+  height:700rpx;
+  margin-top:240rpx
+}/* pages/experience/experience.wxss */
+.experience_box{
+  min-height: 240rpx;
+}
+.add_btn{
+  border: 2rpx solid #F76B24;
+border-radius: 40rpx;
+width: 472rpx;
+height: 80rpx;
+line-height: 80rpx;
+color: #F76B24;
+margin-left: 97rpx;
+font-size: 36rpx;
+}
+.add_btn::before{
+  content:" ";
+  width: 5px;
+  height: 5px;
+  display: block;
+  border-radius: 2.5px;
+  background: #F76B24;
+  position: absolute;
+  top: 46%;
+  right: 30rpx;
+  color: #F76B24;
+}
+.add_btn::after{
+  content:"";
+  width: 5px;
+  height: 5px;
+  display: block;
+  border-radius: 2.5px;
+  background: #F76B24;
+  position: absolute;
+  top: 46%;
+  left: 30rpx;
+  color: #F76B24;
+}
+.experience_box{
+  text-align: left;
+  padding: 40rpx;
+  box-sizing: border-box;
+
+}
+.main{
+  height:auto;
+  padding-bottom: 200rpx;
+}
+.experience{
+    margin-bottom: 40rpx;
+}
+.experience .view1{
+  font-size: 30rpx;
+  color: #000000;
+  margin-bottom: 10rpx;
+  font-weight: 800
+}
+.experience .view1 .text1{
+ float: right;
+ color: #F76B24;
+}
+.experience .view2{
+  font-size: 20rpx;
+ color: #b4b4b4;
+ margin-bottom: 30rpx;
+}
+.experience .view3{
+  font-size: 26rpx;
+color: #323232;
+line-height: 60rpx;
+}

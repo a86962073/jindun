@@ -1,0 +1,12 @@
+/* pages/Traininfo2/Traininfo2.wxss */
+@import'../Traininfo/Traininfo.wxss';
+.success{
+  width: 150rpx;
+  height: 110rpx;
+  position: absolute;
+  right: 0rpx;
+  top: 50rpx;
+}
+.header .title{
+  position: relative
+}

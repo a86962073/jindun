@@ -1,0 +1,90 @@
+/* pages/code/code.wxss */
+@keyframes animate {
+            100% {
+                opacity: 0;
+            }
+        }
+        .container{
+            padding: 5%;
+        }
+        .vcode{
+            position: relative;
+            width: 100%;
+        }
+        .code{
+            width: 100%;
+            padding: 0;
+            height: 40px;
+            font-size: 35px;
+            border: none;
+            outline: none;
+            opacity: 0;
+            -webkit-tap-highlight-color: transparent;
+            position: relative;
+            right: 750rpx;
+            color: #ffffff
+        }
+        .labels{
+            display: flex;
+            display: -webkit-flex;
+            width: 410rpx;
+            height: 80rpx;
+            margin-left: 100rpx;
+            margin-top: 30rpx;
+            justify-content: space-between;
+            -webkit-justify-content: space-between;
+            margin-top: -80rpx;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .label{
+            height: 78rpx;
+            width: 78rpx;
+            border: 1px solid #C8C8C8;
+            border-radius: 3px;
+            float: left;
+            color: #313131;
+            font-size: 35rpx;
+            line-height: 78rpx;
+            text-align: center;
+            padding-bottom: 4rpx;
+            box-sizing: border-box
+        }
+        .label.active{ 
+            border: 1px solid #F76B24;
+box-shadow: inset 0 0 3px 0 #F76B24;
+border-radius: 3px;
+        }
+.body{
+  padding:70rpx;
+}
+.title{
+  font-size: 50rpx;
+color: #323232;
+letter-spacing: -1.2rpx;
+text-align: center;
+}
+.info{
+  font-size: 30rpx;
+color: #4A4A4A;
+text-align: center;
+margin-top: 32rpx
+}
+.waring{
+  font-size: 30rpx;
+color: #F24724;
+text-align: center;
+margin: 11rpx 0 33rpx 0;
+opacity: 0
+}
+.btn_submit{
+  text-align: center;
+  border-radius: 27rpx;
+  width: 300rpx;
+  height:54rpx;
+  margin:0 auto;
+  color: #ffffff;
+  font-size: 30rpx;
+  line-height: 54rpx;
+  margin-top:40rpx;
+  
+}

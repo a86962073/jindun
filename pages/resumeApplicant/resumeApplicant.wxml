@@ -1,0 +1,76 @@
+<view class='body background_main'>
+  <view class='header'>
+    <image src='../images/bg1.png'></image>
+    <view>
+      <image src='{{indexdata.profile_photo_url}}' class='touxiang'></image>
+      <view class='infobox'>
+      <view class='view1'>
+        <text class='text1'>{{indexdata.full_name}}</text>
+        <image src='../images/{{indexdata.gender==1?"":"wo"}}manicon.png'></image>
+        <text class='text2'>{{indexdata.job_status_format}}</text>
+      </view>
+      <view class='view2'>
+      <text>{{indexdata.age}}岁  {{indexdata.gender_format}}</text>
+      </view>
+      <view class='view3'>
+        {{indexdata.education_format}}
+      </view>
+      </view>
+      <view class='cart_footer'>
+        <text class='text1'>{{indexdata.job_status_format}}</text>
+        <text class='text2'>刚刚活跃</text>
+      </view>
+    </view>
+  </view>
+  <view class='main'>
+      <view class='main_title'>工作期望</view>
+      <view class='baseline'>
+      </view>
+      <view class='Expect'>
+        <view class='main_box1'>
+            <image src='../images/gzqw_right.png'></image>
+            <view class='view1'>意向职位</view>
+            <view class='view2'>{{indexdata.job_preferences_info.position?indexdata.job_preferences_info.position:"未知"}}</view>
+        </view>
+         <view class='main_box2'>
+            <image src='../images/gzqw_left.png'></image>
+            <view class='view1'>意向行业</view>
+            <view class='view2'>{{indexdata.job_preferences_info.industry_format?indexdata.job_preferences_info.industry_format:"未知"}}</view>
+        </view>
+        <view class='main_box1'>
+            <image src='../images/gzqw_right.png'></image>
+            <view class='view1'>职位类型</view>
+            <view class='view2'>{{indexdata.job_preferences_info.function_format?indexdata.job_preferences_info.function_format:"未知"}}</view>
+        </view>
+         <view class='main_box2'>
+            <image src='../images/gzqw_left.png'></image>
+            <view class='view1'>期望月薪</view>
+            <view class='view2'>{{indexdata.job_preferences_info.salary}}</view>
+        </view>
+        <view class='main_box1'>
+            <image src='../images/gzqw_right.png'></image>
+            <view class='view1'>期望城市</view>
+            <view class='view2'>{{indexdata.job_preferences_info.work_location_info.city_name=="市辖区"?indexdata.job_preferences_info.work_location_info.province_name:indexdata.job_preferences_info.work_location_info.city_name}}{{indexdata.job_preferences_info.work_location_info.area_name}}</view>
+        </view>
+      </view>
+      <view class='main_title'>工作经历</view>
+      <view class='baseline2' style='height:{{indexdata.work_experience_list.length*250+100}}rpx'>
+      </view>
+      <view class='experience' >
+        <view class='main_box{{idx%2+1}}' wx:for='{{indexdata.work_experience_list}}' wx:key="item" wx:for-index="idx" >
+            <image src='../images/experience{{idx%5+1}}.png'></image>
+            <view class='view1'>{{item.company}}</view>
+            <view class='view2'>
+            <view class='text1'>工作内容</view>
+            <view style='overflow:hidden'>{{item.description}}</view>
+            </view>
+            <view class='view3'>{{item.start_time_format}}至{{item.end_time_format}}</view>
+        </view>
+      </view>
+  </view>
+  <view class='footer' wx:if='{{type!=1}}'>
+    <view class='btn btn_yellow' bindtap='invite'>
+      面试邀约
+    </view>
+  </view>
+</view>

@@ -1,0 +1,115 @@
+/* pages/Traininfo/Traininfo.wxss */
+.body{
+  min-height: 100vh;
+  padding-left: 25rpx;
+  padding-top: 25rpx;
+  padding-bottom: 130rpx;
+  box-sizing: border-box
+}
+.header{
+  background: #ffffff;
+  width: 700rpx;
+  border-radius:6rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  margin-bottom: 20rpx;
+  padding-bottom: 30rpx;
+}
+.traniPic{
+  width: 660rpx;
+  height: 440rpx;
+  padding-top: 20rpx;
+  box-sizing: border-box;
+}
+.header .title{
+  font-size: 36rpx;
+  color: #141414;
+  font-weight: 800;
+  width: 600rpx;
+  margin-left: 20rpx;
+  margin: 20rpx;
+}
+.header .price{
+  color: #F24724;
+  margin:0 20rpx;
+  font-size: 30rpx;
+  line-height: 50rpx;
+}
+.header .time{
+  font-size: 26rpx;
+  color: #B4B4B4;
+ margin:0 20rpx;
+ padding-bottom: 50rpx;
+}
+.header .header_main{
+  font-size: 30rpx;
+  color: #141414;
+  line-height: 50rpx;
+  margin:0 20rpx;
+}
+.main{
+  background: #ffffff;
+  width: 700rpx;
+  border-radius:6rpx;
+  padding: 0 40rpx 30rpx 40rpx;
+  box-sizing: border-box;
+  overflow: hidden
+}
+.main .title{
+  line-height: 130rpx;
+  text-align: center;
+  font-size: 36rpx;
+  color: #141414;
+  font-weight: 800;
+}
+.main .title::after{
+  content:"";
+  background:  #D8D8D8;
+  width: 30rpx;
+  height: 4rpx;
+  display: block;
+  position: relative;
+  left: 315rpx;
+  top: -30rpx;
+}
+.main .info{
+  font-size: 30rpx;
+color: #141414;
+line-height: 24px;
+}
+
+.footer{
+  display: flex;
+  background: #ffffff;
+  position: fixed;
+  width: 750rpx;
+  height: 110rpx;
+  line-height: 110rpx;
+  bottom:0;
+  left: 0;
+  padding: 0 25rpx;
+  font-size: 26rpx;
+  color: #969696;
+}
+.footer .price{
+  font-size: 36rpx;
+  color: #F24724;
+  width: 320rpx;
+}
+.btns{
+  width: 250rpx;
+  height: 80rpx;
+  text-align: center;
+  margin-top: 15rpx;
+  line-height: 80rpx;
+  border-radius: 20px;
+}
+.agree{
+  font-size: 26rpx;
+color: #969696;
+height: 80rpx;
+margin-top: 40rpx;
+}
+.agree text{
+  position: relative;
+}

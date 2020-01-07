@@ -1,0 +1,54 @@
+<view class='body'>
+  <view style='  overflow: hidden'>
+  <view class='header'>
+  <view class='title' style='color:#262B42;'>工作期望</view>
+  <image src='../images/border_bottom.png' class='border_bottom'></image>
+  <view class='info'>描述一下你所期望得到的职位</view>
+  </view>
+  <view class='main'>
+      <view class='sanjiao'>
+      </view>
+      <view class='addbtn_box'>
+      <view class='addbtn'>
+              <image src='https://jd.100dp.com{{image}}' wx:if='{{image}}'></image>
+        <image src='../images/touxiang1.png' wx:if='{{!image}}'></image>
+      </view>
+      </view>  
+      <view class='form'>
+        <view class='formbox'>
+          <image src='../images/yxzw.png'></image>
+          <text class='formname' >意向职位</text>
+          <input placeholder="请填写你的意向职位" bindinput="bindKeyInput"></input>
+        </view><view class='formbox'>
+         <picker mode="multiSelector" bindchange="bindMultiPickerChange2" bindcolumnchange="bindcolumnchange" value="{{multiArray2}}" range="{{multiArray2}}">
+          <image src='../images/yxzw.png'></image>
+          <text class='formname' >职位类型</text>
+          <input placeholder="请选择>" disabled value='{{multiArray2[0][multiIndex2[0]]}}-{{multiArray2[1][multiIndex2[1]]}}' ></input>
+          </picker>
+        </view>
+         <view class='formbox'>
+         <picker value='{{array2}}' bindchange='bindChange2' range="{{array2}}" range-key='name'>
+          <image src='../images/qwyx.png'></image>
+          <text class='formname' >期望月薪</text>
+          <input placeholder="请选择>" disabled value='{{array2[index2].name}}'></input>
+          </picker>
+        </view>
+        <view class='formbox'>
+      <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}" style='display:none'>
+          <image src='../images/qwcs.png'></image>
+          <text class='formname' >期望城市</text>
+          <input placeholder="请选择>" disabled value='{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}'></input>
+          </picker>
+            <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+          <image src='../images/qwcs.png'></image>
+          <text class='formname' >期望城市</text>
+          <input placeholder="请选择>" disabled value='{{region[0]}}，{{region[1]}}，{{region[2]}}'></input>
+          </picker>
+        </view>
+      </view>
+      
+     <view class='next_btn btn btn_chen' bindtap='save'>完成</view>
+  </view>
+  </view>
+</view>
+<image src='../images/background.png' class='background' mode='widthFix'></image>

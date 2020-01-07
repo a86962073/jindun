@@ -1,0 +1,15 @@
+<view class='body background_main'>
+  <view class='search'>
+    <!-- <input placeholder="搜索关键词寻找人才"></input><view class='btns btn_chen search_btn'>搜索</view> -->
+  </view>
+  <view class='resumebox'  wx:for='{{indexdata}}' wx:key='item'  bindtap='info' data-id='{{item.id}}'>
+    <image src='{{item.profile_photo_url}}' class='touxiang'></image>
+    <view class='view1'>{{item.full_name?item.full_name:'未知'}}</view>
+    <view class='view2 {{item.gender=="女"?"woman":"man"}}'>
+    <image src='../images/sr_{{item.gender=="女"?"wo":""}}man.png'></image>
+    {{item.age}}岁  {{item.gender}}   {{item.education}}</view>
+    <view class='view3'>{{item.job_status?item.job_status:'未知'}}</view>
+    <view class='view4'>{{item.position?item.position:'未知'}}</view>
+    <view class='view5 btn btn_yellow'>查看简历</view>
+  </view>
+</view>

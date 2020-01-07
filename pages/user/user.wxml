@@ -1,0 +1,49 @@
+<view class='body background_main'>
+  <view class='header'>
+    <view bindtap=''>
+    <view class='view1'>用户名</view>
+    <view class='view2'>{{indexdata.nickname}}</view>
+    </view>
+    <image src='{{indexdata.avatar}}'></image>
+  </view>
+  <view class='main'>
+    <view class='main_header'>
+      <image src='../images/user_header.png' class='user_header_image'></image>
+      <view class='view1'> </view>
+      <view class='view2'> </view>
+    </view>
+      <view class='label'>
+        <view class='label_box'>
+          <view class='view1' bindtap='apply_num'>{{indexdata.apply_num}}</view>
+          <view class='view2'>已投递岗位</view>
+        </view>
+        <view class='label_box'>
+          <view class='view1' bindtap='interview_num'>{{indexdata.interview_num}}</view>
+          <view class='view2'>面试过的岗位</view>
+        </view>
+        <view class='label_box' bindtap='apply_num2'>
+          <view class='view1'>{{indexdata.collect_num}}</view>
+          <view class='view2'>收藏的岗位</view>
+        </view>
+      </view>
+     <view class='formbox'>
+  <view class='form' bindtap='Myresume'>
+       <text class='formname' >我的简历</text>
+       <text class='formvalue'>{{indexdata.perfect_degree}}%</text>
+    </view>
+   <view class='form'>
+       <text class='formname' >测评结果</text>
+    </view>
+    <view class='form'>
+      <text class='formname' >我的积分</text>
+    </view>
+    <view class='form'>
+       <text class='formname' >我的兑换</text>
+    </view>
+</view>
+  </view>
+ <view class='footer'>
+  关注公众号
+ </view>
+</view>
+

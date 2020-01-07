@@ -1,0 +1,55 @@
+<view class='body background_main'>
+  <view class='title'>
+  <image src='../images/gsxx.png'></image>
+  <text>公司信息</text>
+  </view>
+  <view class='formbox'>
+  <view class='form'>
+      <text class='formname' >公司名称</text>
+      <input placeholder="请填写公司名称"  bindchange='bindChange' value='{{indexdata.company}}'></input>
+    </view>
+  </view>
+  <view class='formbox'>
+  <view class='form'>
+       <picker mode="date" value='{{time}}' bindchange='bindTimeChange'>
+          <text class='formname' >开始时间</text>
+          <input placeholder="请选择>" disabled value='{{time}}'></input>
+        </picker>
+    </view>
+    <view class='form'>
+       <picker mode="date" value='{{time2}}' bindchange='bindTimeChange2'>
+          <text class='formname' >结束时间</text>
+          <input placeholder="请选择>" disabled value='{{time2}}'></input>
+        </picker>
+    </view>
+  </view>
+  <view class='title'>
+  <image src='../images/gzqw.png'></image>
+  <text>职位信息</text>
+  </view>
+   <view class='formbox'>
+  <view class='form'>
+          <text class='formname' >职位名称</text>
+          <input placeholder="请填写职位名称"  bindchange='bindChange3' value='{{indexdata.position}}'></input>
+    </view>
+    
+  </view>
+  <view class='formbox'>
+  <view class='form'>
+          <text class='formname' >所属部门</text>
+          <input placeholder="请填写所属部门"  bindchange='bindChange4' value='{{indexdata.department}}'></input>
+    </view>
+  </view>
+  <view class='title'>
+  <image src='../images/gznr.png'></image>
+  <text>工作内容</text>
+  </view>
+    <view class='formbox'>
+   <view class='form'>
+          <view><textarea placeholder="请描述你在公司的工作内容"  placeholder-class="textarea"  bindblur='bindChange5' value='{{indexdata.description}}'></textarea></view>
+    </view>
+    </view>
+    <view class='btn btn_yellow btn_save' bindtap='save'>
+      保存修改
+    </view>
+</view>

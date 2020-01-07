@@ -1,0 +1,22 @@
+/* pages/Interviewinfo/Interviewinfo.wxss */
+@import'../invite/invite.wxss';
+.form view{
+  margin-left: 50rpx;
+  margin-top: 20rpx;
+  color: #222222; 
+    font-size: 30rpx;
+}
+.form .formname{
+  font-size: 30rpx;
+  color: #999999;
+}
+.btn_submit{
+  width:300rpx;
+  margin:30rpx 0;
+  display: inline-block;
+  margin-left: 50rpx;
+}
+.background_main .refuse{
+  background: transparent;
+  border: 1px solid #FEC000 
+}

@@ -1,0 +1,14 @@
+/* pages/editresume/editresume.wxss */
+@import "../experienceadd/experienceadd.wxss";
+.header_box>image{
+  width: 160rpx;
+  height: 160rpx;
+  margin: 40rpx 295rpx;
+  border-radius: 50%
+}
+.header_box{
+  color: #ffffff;
+  font-size: 30rpx;
+  text-align: center;
+  padding-bottom: 80rpx;
+}

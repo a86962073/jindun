@@ -1,0 +1,44 @@
+<view class='body background_main'>
+    <view class='header' wx:for='{{indexdata}}' wx:key='item2' wx:for-index="index" data-id='{{item.enroll_project_id}}' bindtap='toTraininfo2' >
+    <image src='{{item.logo_url}}' class='traniPic'></image>
+    <view class='title'>{{item.title}}    <image src='../images/enrollsuccess.png' class='success'></image></view>
+    <view class='price'>¥{{item.price}}</view>
+    <view class='time'>{{item.start_time}}至{{item.end_time}}</view>
+    <view class='info'>
+      <view>
+        <text style='font-size: 26rpx;color: #141414;'>报名信息:</text>
+        <text style='font-size: 13px;color: #B4B4B4;float:right' catchtap='change' data-id='{{index}}' wx:if='{{item.change}}'>收起</text>
+        <text style='font-size: 13px;color: #B4B4B4;float:right' catchtap='change' data-id='{{index}}' wx:if='{{!item.change}}'>展开</text>
+      </view>
+      <view  wx:if='{{item.change}}'>
+        <text class='text1'>姓名</text>
+        <text class='text2'>{{item.name}}</text>
+      </view>
+        <view  wx:if='{{item.change}}'>
+        <text class='text1'>身份证号</text>
+        <text class='text2'>{{item.credential_number}}</text>
+      </view>
+        <view  wx:if='{{item.change}}'>
+        <text class='text1'>手机号</text>
+        <text class='text2'>{{item.phone}}</text>
+      </view>
+       <view  wx:if='{{item.change}}'>
+        <text class='text1'>是否本人报名</text>
+        <text class='text2'>{{item.is_self==1?'是':'否'}}</text>
+      </view>
+      <view wx:if='{{item.agent_name&&item.change}}'>
+        <text class='text1'>代办人</text>
+        <text class='text2'>{{item.agent_name}}</text>
+      </view>
+      <view wx:if='{{item.agent_phone&&item.change}}'>
+        <text class='text1'>代办人电话</text>
+        <text class='text2'>{{item.agent_phone}}</text>
+      </view>
+       <view  wx:if='{{item.change}}'>
+        <text class='text1'>报名日期</text>
+        <text class='text2'>{{item.enroll_time}}</text>
+      </view>
+    </view>
+  </view>
+  
+</view>

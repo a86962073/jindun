@@ -1,0 +1,57 @@
+/* pages/recruit/recruit.wxss */
+@import'../resume/resume.wxss';
+.company_box{
+background: #FFFFFF;
+box-shadow: 0 0 8px 0 rgba(247,107,36,0.20);
+border-radius: 10px;
+width: 630rpx;
+height: 200rpx;
+margin-left: 20rpx;
+box-sizing: border-box;
+padding: 20rpx 38rpx; 
+  position: relative;
+  margin-bottom: 30rpx;
+  
+}
+.header{
+  margin-bottom: 60rpx;
+}
+.company_box image{
+  width: 80rpx;
+  height: 80rpx;
+  margin-top: 40rpx;
+}
+.company_box .view{
+  display: inline-block;
+  padding-left: 10rpx;
+
+}
+.company_box .view .text1{
+  font-size: 32rpx;
+  color: #323232;
+  position: relative; 
+     margin-bottom: 10px; 
+}
+.company_box .view .text2{
+  font-size: 26rpx;
+  color: #B4B4B4;
+   margin-bottom: -10px; 
+  
+}
+.company_box .view .text3{
+  font-size: 20rpx;
+  color: #B4B4B4; 
+  position: absolute;
+  right: 30rpx;
+  top: 80rpx;
+  transform:scaleY(1.5);
+  display: inline-block;
+}
+.new_btn{
+  width: 480rpx;
+  margin: 20rpx auto;
+  height: 80rpx;
+  border-radius: 45rpx;
+  text-align: center;
+  line-height: 80rpx;
+}

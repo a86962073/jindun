@@ -1,0 +1,4 @@
+@import'../postJob/postJob.wxss';/* pages/completeJob/completeJob.wxss */
+.body {
+padding-bottom:0rpx;
+}

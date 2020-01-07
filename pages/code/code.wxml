@@ -1,0 +1,21 @@
+<view class='body'>
+    <view class='title'>验证手机</view>
+    <view class='info'>验证码已发送至{{phone}}</view>
+    <view class='waring'>请输入正确的验证码</view>
+    <view class="vcode" id='vertifycode' bindtap='onfocus'>
+        <view>
+        <input type="number" maxlength='4' ref='code' class='code' id='code'  focus='{{focus}}'  bindinput="bindKeyInput1"  bindblur="bindKeyInput2" value='{{inputdata}}' />
+        </view>
+        <view class="labels" >
+            <label class='label {{inputactive==0?"active":""}}' for="code">{{data1}}</label>
+            <label class='label {{inputactive==1?"active":""}}' for="code">{{data2}}</label>
+            <label class='label {{inputactive==2?"active":""}}' for="code">{{data3}}</label>
+            <label class='label {{inputactive==3||inputactive==4?"active":""}}' for="code">{{data4}}</label>
+        </view>
+       
+    </view>
+     <view class='btn btn_submit btn_chen' bindtap='code1'wx:if='{{code}}'>
+        重新发送
+        </view>
+         <view class='btn_submit btn  btn_chen' wx:if='{{!code}}' style='background:#898989'>{{countDownNum}}s重新发送</view>
+</view>

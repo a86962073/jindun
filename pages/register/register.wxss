@@ -1,0 +1,40 @@
+/* pages/register/register.wxss */
+@import'../login/login.wxss';
+.code_btn{
+  font-size: 30rpx;
+  color: #F76B24;
+  position: absolute;
+  right: 20rpx;
+  top: 25rpx;
+}
+.paynumBox{position: relative}
+.paynumBox .username{
+  padding-right: 200rpx;
+}
+radio .wx-radio-input.wx-radio-input-checked{
+   border: none;
+   background: red;
+}
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked::before{
+   border-radius: 50%;/* 圆角 */
+   width: 45rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+   height: 45rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+   line-height: 40rpx;
+   text-align: center;
+   font-size:30rpx; /* 对勾大小 30rpx */
+   color:#fff; /* 对勾颜色 白色 */
+   background: #F76B24;
+      border:none;
+   transform:translate(-50%, -50%) scale(1);
+   -webkit-transform:translate(-50%, -50%) scale(1);
+}
+.radioGroup{
+  font-size: 24rpx;
+color: #646464;
+padding: 50rpx 0rpx;
+text-align: center;
+height: 130rpx;
+box-sizing: border-box;
+
+}

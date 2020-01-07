@@ -1,0 +1,111 @@
+/* pages/user/user.wxss */
+.body{
+  min-height: 100vh;
+  padding-bottom: 30rpx;
+  box-sizing: border-box;
+}
+.main{
+  width: 690rpx;
+  margin-left: 30rpx;
+
+  border-radius: 6rpx;
+}
+.user_header_image{
+  width: 690rpx;
+  height: 206rpx;
+  position: absolute;
+  z-index: 8
+}
+.main_header{
+  overflow: hidden
+}
+.main_header view{
+  position: relative;
+  z-index: 10;
+  color: #F76B24;
+  text-align: right;
+  margin-right:60rpx;
+}
+.main_header .view1{
+  font-size: 26rpx;
+  margin-top: 70rpx;
+  height: 38rpx;
+}
+.main_header .view2{
+  font-size: 28rpx;
+  font-weight: 600;
+    height: 38rpx;
+}
+.header{
+  width: 690rpx;
+  margin-left: 30rpx;
+  padding-top:60rpx;
+  height: 80rpx;
+  color: #ffffff;
+  text-align: right
+}
+.header .view1{
+  font-size: 30rpx;
+}
+.header .view2{
+  font-size: 24rpx;
+}
+.header>view{
+  display: inline-block;
+    margin-right: 20rpx;
+}
+.header image{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  z-index: 100;
+  position: relative;
+  vertical-align: top;
+  margin-right: 40rpx;
+  margin-top: -20rpx;
+}
+.label{
+  padding: 70rpx 20rpx 20px 20rpx; 
+  background: #ffffff
+}
+.label_box{
+    display: inline-block;
+    width: 200rpx;
+    border: 1px solid #F76B24;
+    box-sizing: border-box;
+    padding: 20rpx;
+    color: #F76B24;
+    border-radius: 6rpx;
+}
+.label_box:not(:first-child){
+   margin-left: 20rpx;
+}
+.label_box .view1{
+    font-size: 44rpx;
+}
+.label_box .view2{
+    font-size: 24rpx;
+}
+.formbox .form{
+  padding: 0 30rpx;
+  font-size: 30rpx;
+  color: #F76B24;
+    background: #ffffff;
+}
+.formbox .form .formvalue{
+  float: right;
+  padding-right: 20rpx;
+  color:  #90EB34;
+}
+.footer{
+  width: 690rpx;
+  background: #ffffff;
+  margin-left: 30rpx;
+  line-height: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  color: #F76B24;
+  font-size: 30rpx;
+  border-radius: 6rpx;
+  margin-top: 20rpx;
+}

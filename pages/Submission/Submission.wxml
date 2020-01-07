@@ -1,0 +1,43 @@
+<view class='body background_main'>
+  <view class='header'>我要报名</view>
+   
+  <view class='footer'>
+     
+    <view class='form'>
+      
+          <text class='formname' >姓名</text>
+          <input placeholder="请填写学员的真实姓名"  value='{{name}}' bindchange='bindChange'></input>
+          
+    </view>
+     <view class='form'>
+          <text class='formname' >身份证号</text>
+          <input placeholder="请填写学员的身份证号" value='{{usercode}}' bindchange='bindChange2' ></input>
+    </view>
+     <view class='form'>
+        
+          <text class='formname' >联系方式</text>
+          <input placeholder="请填写学员的手机号码"  value='{{phone}}' bindchange='bindChange3' type='number'></input>
+
+    </view>
+     <view class='form'>
+          <text class='formname'>是否本人报名</text>
+           <text class='button {{active==false?"active":""}}'  bindtap='signup' data-active='2'>否</text>
+          <text class='button {{active==true?"active":""}}' bindtap='signup' data-active='1'>是</text>
+    </view>
+     <view class='form' wx:if='{{!active}}'>
+          <text class='formname' >代办人</text>
+          <input placeholder="请填写代办人姓名（选填）"  value='{{name1}}' bindchange='bindChange4'></input>
+    </view>
+     <view class='form'  wx:if='{{!active}}'>
+          <text class='formname' >代办人电话</text>
+          <input placeholder="请填写代办人电话（选填）"  value='{{phone1}}' bindchange='bindChange5' type='number'></input>
+    </view>
+    <view class='agree'>
+    <radio value='{{agree}}' bindtap='agree'  checked="{{agree}}"></radio>    
+    <text>本人承若上报信息为本人真实信息</text>
+    </view>
+    <view class='btn btn_yellow btn_submit' bindtap='btn_submit'>
+    下一步
+    </view>
+  </view>
+</view>

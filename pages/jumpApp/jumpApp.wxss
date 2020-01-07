@@ -1,0 +1,41 @@
+/* pages/jumpApp/jumpApp.wxss */
+.header{
+  padding: 50rpx 124rpx;
+}
+.header image{
+  width:502rpx;
+  height: 158rpx;
+}
+.main{
+  padding: 30rpx;
+  font-size: 24rpx;
+  color: #323232;
+  line-height: 40rpx;
+}
+.main .maintitle{
+  font-size: 30rpx;
+  color: #323232;
+  letter-spacing: -0.36px;
+  font-weight: 800;
+  margin-bottom: 20rpx;
+}
+.footer{
+    padding: 30rpx;
+  font-size: 30rpx;
+  color: #323232;
+  line-height: 50rpx;
+  text-align: center;
+  font-weight: 8000
+}
+.footer .footertitle{
+  font-size: 13px;
+color: #646464;
+text-align: left;
+margin-bottom: 30rpx;
+font-weight: 400;
+}
+.footer image{
+  width: 300rpx;
+  height: 300rpx;
+  margin-top: 50rpx;
+}

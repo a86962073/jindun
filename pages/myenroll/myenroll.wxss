@@ -1,0 +1,15 @@
+/* pages/myenroll/myenroll.wxss */
+@import'../Submission2/Submission2.wxss';
+.info{
+  width:auto;
+}
+.success{
+  width: 150rpx;
+  height: 110rpx;
+  position: absolute;
+  right: 0rpx;
+  top: 50rpx;
+}
+.header .title{
+  position: relative
+}

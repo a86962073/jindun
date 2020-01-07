@@ -1,0 +1,55 @@
+<view class='body'>
+  <view class='navigation'>
+      <view class='navigation_box {{active==1?"btns btn_chen":""}}' style='left:10rpx;' bindtap='tochange' data-id='1'>
+      <image src='../images/qzzp.png'></image>
+      全职招聘
+      </view>
+      <view class='navigation_box {{active==2?"btns btn_chen":""}}' style='left:275rpx' bindtap='tochange' data-id='2'>
+      <image src='../images/rmjz.png'></image>
+      热门兼职
+      </view>
+  </view>
+<view class='details'>
+  <view class='details_main background_main' >
+      <view class='details_cart details_cart{{idx%3+1}}'  wx:if='{{active==1}}' bindtap='info' wx:for='{{indexData}}' wx:key='item' data-id='{{item.id}}' wx:for-index="idx">
+        <view class='view1'>
+          <text class='text1'>{{item.title}}</text>
+          <text class='text2'>{{item.salary_str}}{{item.salary}}<text class='text3'></text></text>
+        </view>
+        <view class='view2'>
+          <text class='text1'>{{item.city_name}} {{item.area_name}}</text>
+          <text class='text2'>招聘人</text>
+        </view>
+        <view class='view3' >
+          <text class='text1' wx:for='{{item.tag_list}}' wx:key='item2'>{{item.name}}</text>
+        </view>
+        <view class='view4'>
+          <view class='text1'><image src='{{item.logo_url}}'></image>{{item.publisher}}</view>
+          <view class='text2'><image src='../images/lbwz.png'></image>{{item.publish_time}}</view>
+        </view>
+      </view>
+      <view class='details_carts details_cart details_cart{{idx%3+1}}'  wx:if='{{active==2}}'bindtap='info2' wx:for='{{indexData}}' wx:key='item' data-id='{{item.id}}' wx:for-index="idx">
+        <view class='view1'>
+          <text class='text1'>{{item.title}}</text>
+          <text class='text2' style='color:{{item.status_color}}'>{{item.status_text}}<text class='text3'></text></text>
+        </view>
+        <view class='view5'>
+          <text class='text1'>{{item.category_name}}</text>
+          <text class='text1'>{{item.salary_type}}</text>
+          <text class='text1'>{{item.salary}}</text>
+        </view>
+        <view class='view6'>
+          <text class='text1'>{{item.city_name}}{{item.area_name}}</text>
+          <text class='text1'>{{item.time}}</text>
+        </view>
+        <view class='view3' >
+          <text class='text1' wx:for='{{item.tag_list}}' wx:key='item2'>{{item.name}}</text>
+        </view>
+        <view class='view4'>
+          <view class='text1'><text wx:if="{{item.belong_type==1}}" style='display:inline-block;padding:10rpx 20rpx;background:#F76B24;color:#ffffff;border-radius:10rpx;margin-right:20rpx;'>公司</text><text wx:if="{{item.belong_type==0}}">个人</text>{{item.belong_id}}</view>
+          <view class='text2'><image src='../images/lbwz.png'></image>{{item.publish_time}}</view>
+        </view>
+      </view>
+  </view>
+</view>
+</view>

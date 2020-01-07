@@ -1,0 +1,31 @@
+<view class='body'>
+  <view style='overflow:hidden'>
+  <view class='header'>
+  <view class='title'>选择您的性别</view>
+  <image src='../images/border_bottom.png' class='border_bottom'></image>
+  <view class='info'>证明是帅哥/美女的同时记得上传照片</view>
+  </view>
+  <view class='main'>
+      <view class='sanjiao'>
+
+      </view>
+      <view class='addbtn_box' bindtap='uploader'>
+      <view class='addbtn' wx:if='{{!image}}'>+</view>
+      <image src='{{imagesList[0]}}' class='touxiang'></image>
+      </view>  
+      <view>
+          <view class='sex' bindtap='change' data-sex='man'>
+            <image src='../images/man.png'></image>
+          </view>
+          <view class='sex'  bindtap='change' data-sex='woman'>
+            <image src='../images/woman.png'></image>
+          </view>
+        </view>
+         <radio-group bindchange='radioChange'>
+            <radio value='man' wx:for="{{items}}" wx:key="key" value="{{item.value}}" checked="{{item.checked}}" ></radio>   
+        </radio-group>
+        <view  class='next_btn btn btn_chen' bindtap='next'>下一步</view>
+  </view>
+  </view>
+</view>
+<image src='../images/background.png' class='background' mode='widthFix'></image>

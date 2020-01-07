@@ -1,0 +1,76 @@
+/* pages/talentMarket/talentMarket.wxss */
+.body{
+  overflow:hidden;
+  padding-top: 90rpx;
+  padding: 90rpx 34rpx;
+  min-height: 90vh
+}
+.search{
+  background: #ffffff;
+  padding: 10rpx;
+  position: fixed;
+  width: 750rpx;
+  top: 0;
+  left: 0;
+  z-index: 100
+}
+.resumebox{
+  background: #FFFFFF;
+  border-radius: 3px;
+  width: 326rpx;
+  height: 484rpx;
+  margin-top: 10px; 
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 40rpx;
+}
+.resumebox:nth-child(odd){
+  margin-left: 30rpx;
+}
+.resumebox .touxiang{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%
+}
+.resumebox .view1{
+  font-size: 34rpx;
+color: #141414;
+font-weight: 800;
+}
+.resumebox view{
+  margin-top: 10rpx;
+}
+.resumebox .view2.man{
+  font-size: 20rpx;
+color: #4A90E2;
+}
+.resumebox .view2{
+  font-size: 20rpx;
+color: #4A90E2;
+}
+.resumebox .view2.woman{
+  font-size: 20rpx;
+color: #FF8F4D;
+}
+.resumebox .view2 image{
+  width: 20rpx;
+  height: 20rpx;
+}
+.resumebox .view3{
+  font-size: 20rpx;
+color: #141414;
+}
+.resumebox .view4{
+  font-size: 26rpx;
+color: #323232;
+}
+.resumebox .view5{
+    height: 64rpx;
+    line-height: 64rpx;
+    width: 240rpx;
+    margin: 20rpx auto;
+    border-radius: 32rpx;
+    font-size: 26rpx;
+}
+

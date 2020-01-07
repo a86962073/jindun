@@ -1,0 +1,57 @@
+.title{
+  font-size: 50rpx;
+  color: #323232;
+  font-weight:400;
+  letter-spacing: -1.2rpx;
+}
+.body{
+  padding:70rpx;
+}
+.paynumBox  .username{
+  margin-top:70rpx;
+  font-size: 30rpx;
+  letter-spacing: 0.72rpx;
+  padding: 25rpx 0;
+}
+.paynumBox input{
+   margin-top:30rpx;
+  font-size: 30rpx;
+  letter-spacing: 0.72rpx;
+  padding: 25rpx 0;
+}
+input{
+  border-bottom: 1rpx solid #cccccc
+}
+.username::-webkit-input-placeholder{
+  color: #C8C8C8;
+}
+.body .codebtn{
+border-radius: 45rpx;
+font-size: 36rpx;
+color: #FFFFFF;
+letter-spacing: 0.86rpx;
+margin-top:50rpx; 
+height: 80rpx;
+text-align: center;
+line-height: 80rpx;
+}
+
+.findpwd{
+  font-size: 28rpx;
+  color: #949494;
+  letter-spacing: -0.31px;
+  text-align: left;
+  margin-top:23rpx;
+    display: inline-block
+}
+.toRegister{
+  font-size: 28rpx;
+  color: #949494;
+  letter-spacing: -0.31px;
+  float: right;
+  margin-top:23rpx ;
+      display: inline-block
+}
+.findpwd text{
+  color: #F76B24;
+}

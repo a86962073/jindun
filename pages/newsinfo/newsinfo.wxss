@@ -1,0 +1,12 @@
+/* pages/newsinfo/newsinfo.wxss */
+
+@import "../../wxParse/wxParse.wxss";  
+.body{
+  font-size: 28rpx;
+  padding: 10rpx;
+}
+.header{
+  text-align: center;
+  font-size: 36rpx;
+  line-height: 80rpx;
+}

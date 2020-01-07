@@ -1,0 +1,111 @@
+<view class='body background_main'>
+  <view style='font-size: 30rpx;color: #FFFFFF;padding-left:30rpx;'>岗位信息</view>
+  <view class='formbox'>
+  <view class='form'>
+       <text class='formname' >岗位名称</text>
+        <input placeholder="请填写岗位名称"  bindchange='bindChange1' ></input>
+    </view>
+   <view class='form'>
+       <picker  bindchange='bindChange2' range="{{indexdata.department_list}}" range-key='{{"name"}}'>
+          <text class='formname' >所属部门</text>
+          <input placeholder="请选择>" disabled value='{{indexdata.department_list[index].name}}'></input>
+        </picker>
+    </view>
+    <view class='form'>
+       <picker mode="multiSelector" bindchange="bindChange3" bindcolumnchange="bindcolumnchange" value="{{multiIndex2}}" range="{{multiArray2}}">
+          <text class='formname' >所属岗位</text>
+          <input placeholder="请选择>" disabled value='{{multiArray2[0][multiIndex2[0]]}}-{{multiArray2[1][multiIndex2[1]]}}'></input>
+        </picker>
+    </view>
+    <view class='form'>
+       <text class='formname' >岗位所需人数</text>
+        <input placeholder="请填写岗位所需人数" type='number'  bindchange='bindChange4'></input>
+    </view>
+</view>
+<view class='formbox'>
+<view class='form'>
+       <picker bindchange='bindChange5' range="{{indexdata.work_experience_list}}" range-key='{{"name"}}'>
+          <text class='formname' >工作经验</text>
+          <input placeholder="请选择>" disabled value='{{indexdata.work_experience_list[index2].name}}'></input>
+        </picker>
+    </view>
+</view>
+<view class='formbox'>
+<view class='form'>
+       <picker  bindchange='bindChange6' range="{{indexdata.education_list}}" range-key='{{"name"}}'>
+          <text class='formname'>学历</text>
+          <input placeholder="请选择>" disabled value='{{indexdata.education_list[index3].name}}'></input>
+        </picker>
+    </view>
+</view>
+<view class='formbox'>
+<view class='form'>
+       <picker  bindchange='bindChange7' range="{{array}}">
+          <text class='formname' >性别</text>
+          <input placeholder="请选择>" disabled value='{{array[[index7]]}}'></input>
+        </picker>
+    </view>
+    <view class='form'>
+          <text class='formname' >年龄</text>
+          <input placeholder="请填写年龄" bindchange='bindChange8'></input>
+    </view>
+    <view class='form'>
+         <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+          <text class='formname' >所属区域</text>
+          <input placeholder="请选择>" disabled value='{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}'></input>
+        </picker>
+    </view>
+    <!-- <view class='form'>
+       <picker value='{{array7}}' bindchange='bindChange9' range="{{array7}}">
+          <text class='formname' >所在地点</text>
+          <input placeholder="请选择>" disabled></input>
+        </picker>
+    </view> -->
+    <view class='form'>
+     <text class='formname' >详细地址</text>
+          <view><textarea placeholder="小区/写字楼 等详细地址" bindinput='bindWordLimit'></textarea></view>
+      
+    </view>
+</view>
+<view class='formbox'>
+<view class='form'>
+       <picker bindchange='bindChange9' range="{{indexdata.salary_list}}" range-key='{{"salary"}}'>
+          <text class='formname' >薪资</text>
+          <input placeholder="请选择>" disabled value='{{indexdata.salary_list[index4].salary}}'></input>
+        </picker>
+    </view>
+<view class='form'>
+       <picker bindchange='bindChange10' range="{{indexdata.salary_type_list}}" range-key='{{"name"}}'>
+          <text class='formname' >薪资发放方式</text>
+          <input placeholder="请选择>" disabled value='{{indexdata.salary_type_list[index5].name}}'></input>
+        </picker>
+    </view>
+    <view class='form'>
+       <picker bindchange='bindChange11' range="{{indexdata.welfare_list}}" range-key='{{"name"}}'>
+          <text class='formname' >福利</text>
+          <input placeholder="请选择>" disabled value='{{index6}}'></input>
+        </picker>
+    </view>
+ </view>
+ <view class='formbox'>
+<view class='form'>
+    <text class='formname' >岗位描述</text>
+        <view><textarea placeholder="请填写岗位描述" class='textarea' maxlength='10000' bindinput='bindWordLimit2'></textarea></view>
+    </view>
+    
+    <view class='form'>
+    <text class='formname' >技能要求</text>
+          <view><textarea placeholder="请填写技能要求" class='textarea' maxlength='10000' bindinput='bindWordLimit3'></textarea></view>
+      
+    </view>
+    
+</view>
+<view class='formbox'>
+<view class='form'>
+          <text class='formname'>上架岗位</text>
+          <switch class="tui-fr" checked="{{isChecked1}}" bindchange="changeSwitch1"/>
+    </view>
+</view>
+<view class='btn btn_yellow btn_submit' bindtap='save'>发布岗位</view>
+</view>
+

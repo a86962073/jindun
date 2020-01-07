@@ -1,0 +1,86 @@
+{
+  "pages": [
+        "pages/index/index",
+        "pages/resume/resume",
+        "pages/wantenroll/wantenroll",
+        "pages/wantrecruit/wantrecruit",
+        "pages/enroll/enroll",
+        "pages/Traininfo2/Traininfo2",
+        "pages/myenroll/myenroll",
+        "pages/Train/Train",
+        "pages/Traininfo/Traininfo",
+        "pages/paysuccess/paysuccess",
+        "pages/Submission2/Submission2",
+        "pages/Submission/Submission",
+        "pages/register/register",
+        "pages/positionDetails2/positionDetails2",
+        "pages/jumpApp/jumpApp",
+        "pages/webview/webview",
+
+        "pages/newslist/newslist",
+        "pages/newsinfo/newsinfo",
+        "pages/Myresume/Myresume",
+        "pages/invite/invite",
+        "pages/resumeApplicant/resumeApplicant",
+        "pages/editresume/editresume",
+        "pages/editresume2/editresume2",
+        "pages/code/code",
+        "pages/login/login",
+        "pages/experience/experience",
+        "pages/Interview/Interview",
+        "pages/completeJob2/completeJob2",
+        "pages/Interviewinfo/Interviewinfo",
+        "pages/release/release",
+        "pages/postJob/postJob",
+        "pages/recruit/recruit",
+        "pages/companyInfo/companyInfo",
+        "pages/positionDetails/positionDetails",
+        "pages/release2/release2",
+        "pages/user/user",
+        "pages/information/information",
+        "pages/recruit3/recruit3",
+        "pages/completeJob/completeJob",
+        "pages/talentMarket/talentMarket",
+        "pages/information3/information3",
+        "pages/experienceadd/experienceadd",
+        "pages/information2/information2",
+        "pages/Mynews/Mynews",
+        "pages/recruit2/recruit2",
+        "pages/Application/Application"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "金盾秒点招聘",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#FF5E3A",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/images/index.png",
+        "selectedIconPath": "pages/images/index_active.png"
+      },
+      {
+        "pagePath": "pages/Mynews/Mynews",
+        "text": "我的消息",
+        "iconPath": "pages/images/mynews.png",
+        "selectedIconPath": "pages/images/mynews_active.png"
+      },
+        {
+          "pagePath": "pages/wantenroll/wantenroll",
+          "text": "培训报名",
+          "iconPath": "pages/images/wantenroll.png",
+          "selectedIconPath": "pages/images/wantenroll_active.png"
+        },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人中心",
+        "iconPath": "pages/images/user.png",
+        "selectedIconPath": "pages/images/user_active.png"
+      }
+    ]
+  }
+}

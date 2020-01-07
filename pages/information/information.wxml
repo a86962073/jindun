@@ -1,0 +1,44 @@
+<view class='body'>
+  <view style='  overflow: hidden'>
+  <view class='header'>
+  <view class='title'>基本信息</view>
+  <image src='../images/border_bottom.png' class='border_bottom'></image>
+  <view class='info'>填写您的基本信息和上传照片</view>
+  </view>
+  <view class='main'>
+      <view class='sanjiao'>
+
+      </view>
+      <view class='addbtn_box'>
+      <view class='addbtn'>
+        <image src='https://jd.100dp.com{{image}}' wx:if='{{image}}'></image>
+        <image src='../images/touxiang1.png' wx:if='{{!image}}'></image>
+      </view>
+      </view>  
+      <view class='form'>
+        <view class='formbox'>
+          <image src='../images/username.png'></image>
+          <text class='formname' >姓名</text>
+          <input placeholder="请填写你的姓名" bindinput="bindKeyInput"></input>
+        </view>
+        <view class='formbox'>
+         <picker mode="date" value='{{time}}' bindchange='bindTimeChange'>
+          <image src='../images/gzsj.png'></image>
+          <text class='formname' >出生年月</text>
+          <input placeholder="请选择>" disabled value='{{time}}'></input>
+          </picker>
+        </view>
+         <view class='formbox'>
+         <picker mode="date" value='{{time2}}' bindchange='bindTimeChange2'>
+          <image src='../images/csny.png'></image>
+          <text class='formname' >参加工作时间</text>
+          <input placeholder="请选择>" disabled value='{{time2}}'></input>
+          </picker>
+        </view>
+      </view>
+        
+     <view class='next_btn btn btn_chen' bindtap='next' >下一步</view>
+  </view>
+  </view>
+</view>
+<image src='../images/background.png' class='background' mode='widthFix'></image>

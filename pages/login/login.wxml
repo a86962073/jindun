@@ -1,0 +1,14 @@
+<body>
+<form>
+<view class='body'>
+  <text class='title'>秒点招聘</text>
+  <view class='paynumBox'>
+    <input name="username" placeholder="请输入注册过金盾秒点的手机号码" type='number' class='username' bindinput="bindKeyInput1" maxlength='11'/>
+  </view>
+  <view class='codebtn btn  btn_chen' wx:if='{{code}}' bindtap='code'>发送验证码</view>
+   <view class='codebtn btn ' wx:if='{{!code}}' style='color:#898989;background:#c8c8c8'>{{countDownNum}}s后重新发送</view>
+  <view class='findpwd' bindtap='toFind'>返回首页</view>
+  <view class='toRegister' bindtap='toRegister'>立即注册</view>
+</view>
+</form>
+</body>

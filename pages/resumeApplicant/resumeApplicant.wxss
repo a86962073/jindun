@@ -1,0 +1,250 @@
+/* pages/resumeApplicant/resumeApplicant.wxss */
+.body{
+  min-height: 100vh;
+}
+.header>image{
+  width: 690rpx;
+  margin-left: 30rpx;
+  margin-top: 60rpx;
+  height: 420rpx;
+  position: absolute;
+  z-index: 1;
+  
+}
+.touxiang{
+  width: 100rpx;
+  height: 100rpx;
+  z-index: 10;
+  position: relative;
+  border-radius: 50%;
+  margin-left: 80rpx;
+  margin-top: 180rpx;
+}
+.infobox{
+  position: relative;
+  z-index: 100;
+  display: inline-block;
+  right: -40rpx;
+  top: 40rpx;
+  width: 480rpx;
+}
+.infobox .view1 image{
+  width: 42rpx;
+  height: 42rpx;
+  margin-right: 90rpx;
+  margin-left: 10rpx;
+
+}
+.infobox .view1 .text1{
+  font-size: 50rpx;
+  color: #323232;
+  font-weight: 800;
+}
+.infobox .view1 .text2{
+  font-size: 26rpx;
+  color: #969696;
+  text-align: right;
+  position: absolute;
+  right: 30rpx;
+}
+.infobox .view2{
+  font-size: 26rpx;
+color: #F9DC55;
+margin-top: 10rpx;
+}
+.infobox .view3{
+  font-size: 26rpx;
+color: #646464;
+margin-top: 10rpx;
+min-height: 10rpx;
+}
+.cart_footer{
+  position: relative;
+  z-index: 100;
+  width: 600rpx;
+  margin-left: 60rpx;
+  padding-top: 110rpx;
+  font-size: 30rpx;
+}
+.cart_footer .text1{
+  color: #323232;
+}
+.cart_footer .text2{
+  color: #b4b4b4;
+  float: right
+}
+.main{
+
+  font-size: 36rpx;
+  text-align: center;
+  overflow: hidden
+}
+.main_title{
+  margin-top: 60rpx;
+  margin-bottom: 30rpx;
+  color: #ffffff;
+}
+.main_box1 image{
+  width: 330rpx;
+  height: 150rpx;
+  text-align: right;
+  position: relative;
+  right: -142rpx;
+}
+.main_box2 image{
+  width: 330rpx;
+  height: 150rpx;
+  position: relative;
+  left:-142rpx;
+}
+.baseline{
+  width: 1rpx;
+  background: #ffffff;
+  height: 1200rpx;
+  position: absolute;
+  left: 375rpx;
+}
+.baseline2{
+   width: 1rpx;
+  background: #ffffff;
+  height: 800rpx;
+  position: absolute;
+  left: 375rpx;
+}
+.Expect{
+  padding-top: 30rpx;
+}
+.Expect .main_box1 .view1{
+  position: relative;
+  font-size: 26rpx;
+  color: #FFFFFF;
+  top: -155rpx;
+  z-index: 200;
+  right: -100rpx;
+}
+.Expect .main_box1 .view2{
+  position: relative;
+  font-size: 30rpx;
+  color: #50E3C2;
+  top: -115rpx;
+  z-index: 200;
+  right: -180rpx;
+  font-weight: 800;
+}
+.Expect .main_box2 .view2{
+  position: relative;
+  font-size: 30rpx;
+  color: #F5A623;
+  top: -115rpx;
+  z-index: 200;
+  right: 180rpx;
+  font-weight: 800;
+}
+.Expect .main_box2 .view1{
+  position: relative;
+  font-size: 26rpx;
+  color: #FFFFFF;
+  top: -155rpx;
+  z-index: 200;
+  left: -100rpx;
+}
+.experience image{
+  width: 350rpx;
+  height: 398rpx;
+}
+.experience .main_box1 image{
+  width: 350rpx;
+  height: 398rpx;
+  right: -180rpx;
+}
+.experience .main_box2 image{
+  width: 350rpx;
+  height: 398rpx;
+  left: -180rpx;
+}
+.experience .main_box1 .view1{
+   position: relative;
+  font-size: 26rpx;
+  color: #FFFFFF;
+  top: -370rpx;
+  z-index: 200;
+  left: 170rpx;
+  
+}
+.experience .main_box1 .view2{
+   position: relative;
+  font-size: 20rpx;
+  color: #323232;
+  top: -300rpx;
+  z-index: 200;
+  left: 410rpx;
+  width: 300rpx;
+  height: 140rpx;
+  text-align: left;
+  white-space:pre-wrap;
+}
+.experience .main_box1 .view3{
+   position: relative;
+  font-size: 20rpx;
+  color: #FFFFFF;
+  top: -240rpx;
+  z-index: 200;
+  left: 170rpx;
+}
+.experience .main_box2 .view1{
+   position: relative;
+  font-size: 26rpx;
+  color: #FFFFFF;
+  top: -370rpx;
+  z-index: 200;
+  left: -190rpx;
+}
+.experience .main_box2 .view2{
+   position: relative;
+  font-size: 20rpx;
+  color: #323232;
+  top: -300rpx;
+  z-index: 200;
+  left: 50rpx;
+  width: 300rpx;
+  text-align: left;
+  white-space:pre-wrap;
+  height: 140rpx;
+}
+.experience .view2 .text1{
+  font-size: 24rpx;
+}
+.experience .view2 .text2{
+  color: #F5A623
+}
+.experience .main_box2 .view3{
+   position: relative;
+  font-size: 20rpx;
+  color: #FFFFFF;
+  top: -240rpx;
+  z-index: 200;
+  left: -190rpx;
+}
+.experience>view{
+  height: 230rpx;
+}
+.experience{
+    padding-bottom: 350rpx;
+}
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 750rpx;
+  height: 100rpx;
+  text-align: center;
+  background: #FFFFFF;
+  z-index: 1000
+}
+.footer .btn{
+  width: 600rpx;
+  height: 60rpx;
+  border-radius: 30rpx;
+  margin: 20rpx auto;
+  font-size: 36rpx;
+  line-height: 60rpx
+}

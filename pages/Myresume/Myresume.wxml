@@ -1,0 +1,57 @@
+<view class='background_main body'>
+  <view class='header'>
+      <image src='{{indexdata.profile_photo_url}}' class='touxiang'></image>
+      <view class='infobox'>
+      <view class='view1'>
+        <text class='text1'>{{indexdata.full_name}}</text>
+        <image src='../images/{{indexdata.gender==1?"":"wo"}}manicon.png' wxi></image>
+        <text class='text2' bindtap='edit1'>编辑</text>
+      </view>
+      <view class='view3'>
+        <text>{{indexdata.current_city_info.city_name=="市辖区"?indexdata.current_city_info.province_name:indexdata.current_city_info.city_name}}</text>
+        <text>{{indexdata.age}}岁</text>
+        <text>{{indexdata.education_format}}</text>
+        <text>{{indexdata.work_experience_format}}</text>
+      </view>
+     
+     </view>
+  </view>
+   <view class='experience_box'>
+    <view class='experience_title' >工作经历</view>
+        <view class='experience' wx:for='{{indexdata.work_experience_list}}' wx:key='item'>
+          <view class='view1'>{{item.company}} <text class='text1' bindtap='edit' data-id='{{item.id}}'>编辑</text></view>
+          <view class='view2'>{{item.start_time_format}}至{{item.end_time_format}}</view>
+          <view class='view3'>工作内容</view>
+          <view class='view3'>{{item.description}}</view>
+        </view>
+        <view class='btn btn_add' bindtap='add_btn'>添加工作经历</view>
+      </view>
+     <view class='footer'>
+      <view class='experience_title'>工作期望
+      <text bindtap='edit2'>编辑</text>    
+      </view>
+      <view class='viewbox'>
+      <text class='text1'>意向职位</text>
+      <text  class='text2'>{{indexdata.job_preferences_info.position?indexdata.job_preferences_info.position:"未知"}}</text>
+      </view> 
+        <view class='viewbox'>
+      <text class='text1'>意向行业</text>
+      <text  class='text2'>{{indexdata.job_preferences_info.industry_format?indexdata.job_preferences_info.industry_format:"未知"}}</text>
+      </view> 
+        <view class='viewbox'>
+      <text class='text1'>职位类型</text>
+      <text  class='text2'>{{indexdata.job_preferences_info.function_format?indexdata.job_preferences_info.function_format:"未知"}}</text>
+      </view>
+         <view class='viewbox'>
+      <text class='text1'>期望月薪</text>
+      <text  class='text2'>{{indexdata.job_preferences_info.salary?indexdata.job_preferences_info.salary:'未知'}}</text>
+      </view> 
+         <view class='viewbox'>
+      <text class='text1'>期望城市</text>
+      <text  class='text2'>{{indexdata.job_preferences_info.work_location_info.city_name=="市辖区"?indexdata.job_preferences_info.work_location_info.province_name:indexdata.job_preferences_info.work_location_info.city_name}}{{indexdata.job_preferences_info.work_location_info.area_name}}</text>
+      </view>  
+     </view> 
+</view>
+<view class='preview'>
+  <view class='btn btn_yellow' bindtap='resumeApplicant'>预览简历</view>
+</view>

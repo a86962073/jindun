@@ -1,0 +1,56 @@
+/* pages/enroll/enroll.wxss */
+.main{
+
+  margin-top: 20rpx;
+}
+.tabBox{
+  width: 200rpx;
+  display: inline-block;
+  font-size: 26rpx;
+  color: #141414;
+  text-align: center;
+  background: #ffffff;
+  overflow: hidden;
+  position: fixed;
+  left: 0
+}
+.tabBox .active{
+  font-size: 30rpx;
+  color: #F76B24;
+  font-weight: 800
+}
+.tab{
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.enroll image{
+  width: 490rpx;
+  height: 320rpx;
+  border-radius: 6rpx;
+}
+.enrollBox{
+  display: inline-block;
+  padding-top: 20rpx;
+  box-sizing: border-box;
+  background: #f5f5f5;
+  padding-left: 20rpx;
+  width: 550rpx;
+  vertical-align: top;
+}
+.enroll{
+  background: #ffffff;
+  padding-left: 20rpx;
+  padding-top: 20rpx
+}
+.enroll .title{
+  font-size: 30rpx;
+  color: #141414;
+  padding: 25rpx 0;
+}
+.search{
+  position: fixed;
+  z-index: 100;
+  width: 750rpx;
+  padding: 20rpx 0;
+  background: #ffffff 
+}

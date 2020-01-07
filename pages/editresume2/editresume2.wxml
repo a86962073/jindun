@@ -1,0 +1,51 @@
+<view class='body background_main'>
+  <view class='title'>
+  <image src='../images/gzqw.png'></image>
+  <text>工作期望</text>
+  </view>
+<view class='formbox'>
+  <view class='form'>
+          <text class='formname'>意向职位</text>
+          <input placeholder="请填写意向职位"  bindchange='bindChange' value='{{indexdata.job_preferences_info.position}}'></input>
+    </view>
+  </view>
+  <view class='formbox'>
+  <view class='form'>
+         <picker bindchange='bindChange1' range="{{array4}}" value="{{index4}}" mode="multiSelector"  bindcolumnchange="bindcolumnchange">
+          <text class='formname' >意向行业</text>
+          <input placeholder="请选择>" disabled value='{{array4[0][index4[0]]}}-{{array4[1][index4[1]]}}'></input>
+          </picker>
+    </view>
+    
+  </view>
+  <view class='formbox'>
+  <view class='form'>
+    <picker range="{{array3}}" value="{{index3}}" mode="multiSelector" bindcolumnchange="bindcolumnchange2" bindchange='bindChange3'>
+          <text class='formname' >职位类型</text>
+          <input placeholder="请选择>" disabled value='{{array3[0][index3[0]]}}-{{array3[1][index3[1]]}}'></input>
+          </picker>
+    </view>
+    
+  </view>
+  <view class='formbox'>
+  <view class='form'>
+         <picker bindchange='bindChange2' range="{{array5}}" value="{{index5}}" range-key='{{"name"}}'>
+          <text class='formname' >期望月薪</text>
+          <input placeholder="请选择>" disabled value='{{array5[index5].name}}'></input>
+          </picker>
+    </view>
+  </view>
+  <view class='formbox'>
+  <view class='form'>
+          <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}" style='display:none'>
+          <text class='formname' >期望城市</text>
+          <input placeholder="请选择>" disabled value='{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}'></input>
+          </picker>
+           <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+          <text class='formname' >期望城市</text>
+          <input placeholder="请选择>" disabled value='{{region[0]}}，{{region[1]}}，{{region[2]}}'></input>
+          </picker>
+    </view>
+  </view>
+  <view class='btn btn_save btn_yellow' bindtap='save'>保存修改</view>
+</view>

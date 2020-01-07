@@ -1,0 +1,17 @@
+<view class='body'>
+  <view class='header'>
+    <image src='../images/jump.png'></image>
+  </view>
+  <view class='main'>
+    <view class='maintitle'>跳转说明：</view>
+    <view>
+      小程序该功能需要进入“金盾秒点”APP中进行操作，请前往APP中进行使用；
+    </view>
+     <view>如您尚未下载“金盾秒点”APP，可通过扫描下方二维码进行下载。</view>
+  </view> 
+  <view class='footer'>
+    <view class='footertitle'>扫码下载APP</view>
+    <view>扫码下载金盾秒点APP</view>
+    <image src='../images/code.png'></image>
+  </view> 
+</view>

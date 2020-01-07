@@ -1,0 +1,39 @@
+/* pages/Submission/Submission.wxss */
+@import'../invite/invite.wxss';
+.form{
+  line-height: 70rpx;
+}
+.btn_submit{
+  width: 600rpx;
+}
+.form .button{
+  float:right;
+  width: 102rpx;
+  height: 46rpx;
+  background: #FFFFFF;
+border: 2rpx solid #C8C8C8;
+border-radius: 6rpx;
+font-size: 24rpx;
+color: #C8C8C8;
+text-align: center;
+line-height: 46rpx;
+margin-top: 15rpx;
+margin-right: 30rpx;
+}
+.form .button.active{
+  background: #F76B24;
+  color: #ffffff;
+  border: 2rpx solid transparent;
+}
+.agree{
+  font-size: 26rpx;
+color: #969696;
+padding-left: 50rpx;
+height: 80rpx;
+}
+.agree text{
+  position: relative;
+}
+.footer{
+  padding-top: 50rpx;
+}

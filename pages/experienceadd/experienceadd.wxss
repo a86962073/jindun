@@ -1,0 +1,29 @@
+/* pages/experienceadd/experienceadd.wxss */
+@import "../release/release.wxss";
+.body{
+  min-height:100vh;
+}
+textarea{
+  padding-top: 50rpx;
+  line-height: 45rpx;
+}
+.title>image{
+  width: 38rpx;
+  height: 38rpx;
+  vertical-align: middle;
+  margin-right: 20rpx;
+}
+.title{
+  color: #ffffff;
+  font-size: 30rpx;
+  padding-left: 30rpx;
+  line-height: 60rpx;
+}
+.btn_save{
+  width: 600rpx;
+  height: 80rpx;
+  margin: 50rpx auto;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius:40rpx; 
+}
